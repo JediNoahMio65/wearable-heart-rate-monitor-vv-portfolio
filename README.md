@@ -32,7 +32,31 @@ docs/       Simulated design-control and quality documentation
 data/       Simulated verification-test data
 reports/    Simulated verification summaries and supporting artifacts
 ```
+## Documentation Highlights
 
+| Document | What It Demonstrates |
+|---|---|
+| Intended Use and User Needs | Defined wellness-only scope, intended users, excluded uses, and 10 user needs |
+| Design Inputs | Created 15 measurable design inputs linked to verification methods |
+| Simplified FMEA | Identified 10 failure modes, simulated risk controls, and residual-risk rationale |
+| Traceability Matrix | Linked user needs → design inputs → verification tests → risk controls |
+| Verification Protocol | Defined 15 verification test cases and pass/fail acceptance criteria |
+| Verification Report | Recorded simulated results, including one response-time failure and successful re-test |
+| Mock ECO | Documented firmware smoothing-window change and regression-test impact assessment |
+| Mock CAPA | Documented root-cause analysis, corrective/preventive actions, and effectiveness check |
+
+## Simulated Verification Summary
+
+| Metric | Simulated Result |
+|---|---|
+| Design inputs | 15 |
+| Verification tests | 15 |
+| Initial verification passes | 14 |
+| Initial verification failures | 1 |
+| Re-test passes after corrective action | 1 |
+| Open simulated verification failures | 0 |
+
+The simulated response-time deviation was traced to an eight-second smoothing-window configuration. A mock engineering change reduced the window to five seconds, and the re-test met the five-second response-time acceptance criterion without simulated regression failures in related signal-quality controls.
 ## Scope and Limitations
 
 - All content is simulated for educational and portfolio purposes.
